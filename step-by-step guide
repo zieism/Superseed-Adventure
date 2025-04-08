@@ -1,0 +1,197 @@
+Below is a **step-by-step guide** for **each level** of **Superseed Adventure**, giving you clear instructions on how to **play and complete** every puzzle. Feel free to reference this guide if you ever get stuck!
+
+---
+
+## **General Gameplay Instructions**
+
+- **Starting the Game**: On the main menu, click any level button to jump directly into that level’s puzzle. You can play them in any order, although it’s fun to start from Level 1 and progress sequentially.
+- **In-Game Controls**:
+  - **Back**: Return to the main menu from a level.
+  - **Reset**: Restart the current level from scratch.
+  - **Next Level**: Skip to the next puzzle (available once you’ve understood or completed the current one).
+- **Dialogues (Grok the AI)**: Occasionally, an AI character named Grok will pop up with hints or educational insights. Click **OK** to close these dialogues and resume gameplay.
+
+---
+
+## **Level 1: “Escape the Crowded City” (Layer 2 Maze)**
+
+**Objective**: You are navigating a maze from the **Start** (top-left corner) to the **Exit** (bottom-right corner). The puzzle represents finding a faster, cheaper route out of the busy “city” (Ethereum) by using Layer 2 (Superseed).
+
+### **How to Play**
+1. **Movement**: 
+   - Use **arrow keys** (↑, ↓, ←, →) or **WASD** (W=up, A=left, S=down, D=right) to move through the maze.
+   - Your character starts in the top-left cell, highlighted in a **green** tone.
+2. **Avoid Walls**:
+   - If you try to move into a wall (gray cell), your character won’t move.
+   - Find a path through open (white) cells.
+3. **Goal**:
+   - Reach the **bottom-right** cell (Exit), usually highlighted in **yellow**.
+   - When you step onto the exit, the level is solved. Grok will appear to congratulate you and teach you about Layer 2 benefits.
+
+### **Tips**
+- If you’re stuck, try tracing different routes systematically. The maze is not large, so trial and error works well.
+- Remember you can press **Reset** to start over if you lose track of your path.
+
+---
+
+## **Level 2: “Golden Lock” (Supercollateral Color Matching)**
+
+**Objective**: Rotate four **lock dials** to match the **correct color sequence** (red, green, blue, yellow) and unlock the vault. This teaches how “supercollateral” ensures stable coins and low or no interest.
+
+### **How to Play**
+1. **Initial View**:
+   - You’ll see 4 circular “dials” in the center of the screen. Each dial is one of four colors: **red, green, blue, or yellow**.
+2. **Rotating Dials**:
+   - Click any dial to cycle to the **next color** in the sequence (e.g., if it’s red, it changes to green, then blue, then yellow, and back to red).
+3. **Goal**:
+   - All **4 dials** must match the **correct combination** simultaneously. By default, the puzzle’s combination is:
+     - **Dial 1**: Red  
+     - **Dial 2**: Green  
+     - **Dial 3**: Blue  
+     - **Dial 4**: Yellow
+   - As soon as the dials align to red–green–blue–yellow, the lock “unlocks” and reveals “magic coins.”
+4. **Completion**:
+   - Grok explains how stable collateral (supercollateral) ensures stable coin generation without typical interest burdens.
+
+---
+
+## **Level 3: “Magic of Reduction” (Auto-Repayment)**
+
+**Objective**: Collect **moving stars** in a rectangular area to reduce your “debt bar” from 100% to 0%. Demonstrates how protocol profits can automatically chip away at debts.
+
+### **How to Play**
+1. **Debt Bar**:
+   - At the top of the screen, you’ll see a **red/pink bar** representing 100% debt.
+2. **Player Character**:
+   - A small circle (often yellow) is placed inside a 600×400 box. Move it with **arrow keys** or **WASD**.
+3. **Stars**:
+   - Several **green stars** move around randomly, bouncing off walls.
+   - **Collide** with a star to collect it, which reduces your debt bar by a fixed percentage (e.g., 20% per star).
+4. **Completion**:
+   - Once your debt bar hits **0%**, the puzzle is solved. Grok highlights the **auto-repayment** concept.
+
+### **Tips**
+- The stars move slowly, so you can chase them or intercept them by observing their bounce patterns.
+- Watch your boundaries: if you hit the box edges, just loop around.
+
+---
+
+## **Level 4: “Help Your Friends” (Proof of Repayment Puzzle)**
+
+**Objective**: Rearrange **9 puzzle tiles** (F1–F9) from a scrambled grid back to the **correct order** (F1–F9 in reading order). Symbolizes community members helping one another, thus “Proof of Repayment.”
+
+### **How to Play**
+1. **3×3 Grid**:
+   - Each tile is labeled F1, F2, F3 … F9, but they’ll be in a random order initially.
+2. **Swapping Tiles**:
+   - **Click** on one tile → it becomes “selected.”
+   - **Click** on a different tile → the two selected tiles **swap places**.
+3. **Goal**:
+   - Restore the **original** sorted arrangement:
+     ```
+     F1 F2 F3
+     F4 F5 F6
+     F7 F8 F9
+     ```
+4. **Completion**:
+   - Grok congratulates you for helping your friends, paralleling the concept of community-driven repayments.
+
+### **Tips**
+- If you select a tile accidentally, just select the same tile again to “re-select” a new tile. Alternatively, swap it with a tile that doesn’t disrupt your progress.
+- Focus on fixing one row at a time.
+
+---
+
+## **Level 5: “Busy Market” (Supersale Match-3)**
+
+**Objective**: A **Match-3** style puzzle with a **6×6** grid of colored tokens. Swap adjacent tokens to form lines of 3+ identical colors, which disappear and refill. Illustrates a “fair sale” environment for token distribution.
+
+### **How to Play**
+1. **6×6 Grid**:
+   - Each cell holds a colored circle (e.g., red, blue, green, purple, yellow).
+2. **Swapping**:
+   - **Click** one token, then **click** an **adjacent** token (above, below, left, or right—not diagonal) to swap them.
+   - If the swap creates a horizontal or vertical line of at least 3 matching colors, those tokens vanish.
+3. **Dropping and Refilling**:
+   - After tokens vanish, everything **above** drops down to fill empty spaces.
+   - New tokens fall in at the top so the board is always 6×6.
+4. **Completion**:
+   - It’s an **open-ended** puzzle. You can keep creating matches indefinitely. After a few matches, Grok pops up to applaud your success and highlight the fairness of Supersale.
+
+### **Tips**
+- Look for pairs that can form an immediate line of 3 or more.
+- If you make a swap that **doesn’t** create a match, the tokens revert to their original positions.
+
+---
+
+## **Level 6: “Magic Bridges” (Superchain)**
+
+**Objective**: Connect **5 islands** with **bridges** in the correct configuration. Demonstrates Superseed’s role in linking blockchains within a “Superchain.”
+
+### **How to Play**
+1. **Islands**:
+   - Labeled A, B, C, D, E, each positioned at different coordinates on the map.
+2. **Drawing Bridges**:
+   - **Click** one island → it’s selected.
+   - **Click** a different island → a **bridge** is drawn between them, represented by a line.
+3. **Correct Network**:
+   - A list of required connections is predefined (e.g., A–C, B–C, C–D, C–E). 
+   - The puzzle is solved once you’ve formed **all required** bridges.
+4. **Completion**:
+   - Grok appears, explaining how a cohesive bridging network unites multiple blockchains, just like you connected these islands.
+
+### **Tips**
+- If you accidentally re-click the same island, it won’t form a bridge. Just click a different island to form a valid connection.
+- You can’t “remove” a bridge once formed, but typically extra bridges don’t affect the puzzle’s success. You only need to ensure all the **required** ones exist.
+
+---
+
+## **Level 7: “Token Guardian” (Protocol Security Memory Game)**
+
+**Objective**: Classic **memory matching** game with 8 unique tokens (16 total cards). Flip pairs to find matches, emphasizing careful verification (security in protocol).
+
+### **How to Play**
+1. **16 Face-Down Cards**:
+   - Each card has a hidden token (e.g., 🔒, 🔑, 💎, etc.).
+2. **Flipping**:
+   - **Click** a face-down card → it turns face-up (revealing the token).
+   - **Click** a second face-down card → also flips face-up.
+   - If both tokens match, they remain face-up (matched). If not, they flip back down after a short delay.
+3. **Completion**:
+   - The puzzle completes once **all pairs** are matched and remain face-up.
+4. **Tips**:
+   - Use your **memory** to recall which token was on which card.
+   - If you accidentally flip two different tokens, watch them carefully as they flip back; this helps you remember their positions for a future match.
+
+---
+
+## **Level 8: “Future City” (Community-Focused Tetris)**
+
+**Objective**: Build a “city skyline” by stacking falling **Tetris-like** blocks in a **10×20** grid. Clearing lines represents communal growth. After clearing enough lines (e.g., 2), you’ll see an endgame prompt.
+
+### **How to Play**
+1. **Controls**:
+   - **←/→**: Move the falling piece left or right.
+   - **↑**: Rotate the piece 90°.
+   - **↓**: Soft drop (moves piece down faster).
+   - The piece also auto-falls every ~600ms.
+2. **Goal**:
+   - Fit pieces together so you complete **horizontal lines**. 
+   - A line with no gaps **disappears**, and everything above it falls down.
+3. **Completion**:
+   - After a certain number of lines are cleared (default: 2), Grok shows a “Skyline Complete!” message. 
+   - You’ll be asked if you want to **keep playing** Tetris or **return** to the main menu.
+4. **Tips**:
+   - Aim to form continuous horizontal rows.
+   - Rotating shapes effectively is key. Different shapes (I, O, T, S, Z, J, L) fill space uniquely.
+   - If the stack reaches the top, you can’t spawn new pieces. In that event, the puzzle ends automatically.
+
+---
+
+# Final Thoughts
+
+- **Reset** any level at any time if you want to start fresh.  
+- **Back** to the main menu if you want to pick a different level.  
+- **Next Level** helps you move forward quickly if you already grasp the puzzle or want to skip around.
+
+With these **detailed instructions**, you should feel confident navigating each puzzle. **Have fun** exploring the Superseed Adventure, and enjoy learning about **Layer 2, supercollateral, auto-repayment, bridging**, and more along the way!
