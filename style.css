@@ -1,0 +1,326 @@
+/* 
+  style.css (Updated to make the main menu more stylish and modern)
+  ------------------------------------------------------------------
+  Green-forward theme with more compact spacing in the main menu.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: #e8f5e9; /* Pale green background */
+  color: #2e7d32; /* Dark green text */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Main container for the entire game */
+#game-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Each screen is hidden by default; only .active is shown. */
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.screen.active {
+  display: flex;
+}
+
+/* Title styling (with seed emoji) */
+.game-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #1b5e20;
+}
+
+/* Subtitle under title */
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.4;
+  color: #388e3c;
+}
+
+/* The note instructions below the level buttons */
+.note {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #388e3c;
+  text-align: center;
+}
+
+/* The "built by" mention */
+.built-by {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #2e7d32;
+}
+
+/* Level Buttons container: more compact, modern arrangement */
+.level-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.5rem; /* smaller gap */
+  max-width: 700px; /* so they don't get too wide on large screens */
+  margin: 0 auto;
+}
+
+/* Individual level buttons */
+.level-btn {
+  background-color: #66bb6a;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.level-btn:hover {
+  background-color: #58a05b;
+  transform: translateY(-2px);
+}
+
+.level-btn:active {
+  transform: translateY(0);
+}
+
+/* Extra menu buttons (About, Help) */
+.extra-menu-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.extra-menu-buttons button {
+  background-color: #aed581;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #1b5e20;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.extra-menu-buttons button:hover {
+  background-color: #9ccc65;
+  transform: translateY(-2px);
+}
+
+.extra-menu-buttons button:active {
+  transform: translateY(0);
+}
+
+/* Level Container */
+#level-container {
+  align-items: flex-start;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+/* Puzzle area, with subtle pattern referencing seeds/chains */
+#puzzle-area {
+  flex: 1;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: linear-gradient(
+    120deg,
+    rgba(169, 231, 178, 0.2) 25%,
+    rgba(232, 245, 233, 0) 25%,
+    rgba(232, 245, 233, 0) 50%,
+    rgba(169, 231, 178, 0.2) 50%,
+    rgba(169, 231, 178, 0.2) 75%,
+    rgba(232, 245, 233, 0) 75%,
+    rgba(232, 245, 233, 0) 100%
+  );
+  background-size: 28px 28px;
+}
+
+/* Grok's Dialogue Box */
+#grok-dialogue {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  color: #2e7d32;
+  border: 2px solid #66bb6a;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 70%;
+  max-width: 600px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+#grok-dialogue-text {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#grok-dialogue-close {
+  display: block;
+  margin: 0 auto;
+  background-color: #66bb6a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#grok-dialogue-close:hover {
+  background-color: #58a05b;
+}
+#grok-dialogue-close:active {
+  transform: translateY(1px);
+}
+
+/* Nav buttons (Back, Reset, Next Level) */
+.nav-buttons {
+  width: 100%;
+  max-width: 1000px;
+  margin: 1.5rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-buttons button {
+  background-color: #aed581;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  color: #1b5e20;
+}
+
+.nav-buttons button:hover {
+  background-color: #9ccc65;
+  transform: translateY(-2px);
+}
+
+.nav-buttons button:active {
+  transform: translateY(0);
+}
+
+/* Floating window general style (About, Help) */
+.floating-window {
+  display: none; /* hidden by default */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  max-width: 600px;
+  transform: translate(-50%, -50%);
+  z-index: 2000; /* above everything else */
+}
+
+.floating-content {
+  background-color: #ffffff;
+  border: 2px solid #66bb6a;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  color: #2e7d32;
+  text-align: center;
+}
+
+.floating-content h2 {
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  margin-top: 1rem;
+  background-color: #66bb6a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.close-btn:hover {
+  background-color: #58a05b;
+}
+
+.close-btn:active {
+  transform: translateY(1px);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .game-title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .level-btn {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .extra-menu-buttons button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  #grok-dialogue {
+    width: 85%;
+  }
+
+  .floating-window {
+    width: 85%;
+  }
+}

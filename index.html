@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Superseed Adventure</title>
+  <!-- Link to our CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Load main JS first, then each level -->
+  <script src="main.js" defer></script>
+  <script src="level1.js" defer></script>
+  <script src="level2.js" defer></script>
+  <script src="level3.js" defer></script>
+  <script src="level4.js" defer></script>
+  <script src="level5.js" defer></script>
+  <script src="level6.js" defer></script>
+  <script src="level7.js" defer></script>
+  <script src="level8.js" defer></script>
+</head>
+<body>
+  <!-- Main Container -->
+  <div id="game-container">
+
+    <!-- Main Menu Screen -->
+    <div id="main-menu" class="screen active">
+      <h1 class="game-title">
+        🌱 Superseed Adventure
+      </h1>
+      <p class="subtitle">
+        Explore the wonders of Superseed, a Layer 2 built on Ethereum using the OP Stack.
+      </p>
+
+      <!-- Level Buttons Container -->
+      <div class="level-buttons">
+        <button class="level-btn" data-level="1">Level 1: Escape the Crowded City</button>
+        <button class="level-btn" data-level="2">Level 2: Golden Lock</button>
+        <button class="level-btn" data-level="3">Level 3: Magic of Reduction</button>
+        <button class="level-btn" data-level="4">Help Your Friends</button>
+        <button class="level-btn" data-level="5">Busy Market</button>
+        <button class="level-btn" data-level="6">Magic Bridges</button>
+        <button class="level-btn" data-level="7">Token Guardian</button>
+        <button class="level-btn" data-level="8">Future City</button>
+      </div>
+
+      <p class="note">
+        Select a level to begin your adventure!
+      </p>
+      <p class="built-by">
+        Built by 
+        <a href="https://x.com/zieism" target="_blank">zieism</a> 
+        with love ❤️
+      </p>
+
+      <!-- New buttons for About and Help -->
+      <div class="extra-menu-buttons">
+        <button id="about-btn">About SuperSeed</button>
+        <button id="help-btn">Help</button>
+      </div>
+    </div>
+    <!-- End Main Menu Screen -->
+
+    <!-- Level Screen -->
+    <div id="level-container" class="screen">
+      <div id="puzzle-area"></div>
+
+      <!-- Grok's Dialogue Box -->
+      <div id="grok-dialogue">
+        <div id="grok-dialogue-text"></div>
+        <button id="grok-dialogue-close">OK</button>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <button id="back-menu-btn">Back</button>
+        <button id="reset-level-btn">Reset</button>
+        <button id="skip-level-btn">Next Level</button>
+      </div>
+    </div>
+    <!-- End Level Screen -->
+
+    <!-- Floating Window: About SuperSeed -->
+    <div id="about-window" class="floating-window">
+      <div class="floating-content">
+        <h2>About SuperSeed</h2>
+        <p><strong>Top 10 Key Features and Strengths:</strong></p>
+        <ol style="text-align:left;">
+          <li>
+            <strong>Self-Repaying Loans:</strong> Uses protocol profits (e.g., sequencer fees)
+            to automatically repay user debts.
+          </li>
+          <li>
+            <strong>Supercollateral:</strong> Enables borrowers to avoid interest payments
+            by over-collateralizing their positions.
+          </li>
+          <li>
+            <strong>Proof of Repayment:</strong> Rewards community members who help repay
+            loans, fostering collaboration.
+          </li>
+          <li>
+            <strong>Ethereum Layer 2:</strong> Built on the OP Stack, ensuring scalability
+            and compatibility with Ethereum’s ecosystem.
+          </li>
+          <li>
+            <strong>Superchain Integration:</strong> Part of a cohesive network of chains
+            (e.g., Base, OP Mainnet), enhancing interoperability.
+          </li>
+          <li>
+            <strong>Native CDP Platform:</strong> A lending system enshrined in the protocol,
+            offering a seamless DeFi experience.
+          </li>
+          <li>
+            <strong>Community-First Tokenomics:</strong> Public sale with no VC lockups,
+            low FDV, and fully unlocked tokens at TGE.
+          </li>
+          <li>
+            <strong>Capital Efficiency:</strong> Aligns user incentives with protocol rewards,
+            reducing financial burdens.
+          </li>
+          <li>
+            <strong>Transparency and Fairness:</strong> Prioritizes equitable access and clear
+            economic design for all participants.
+          </li>
+          <li>
+            <strong>Ecosystem Partnerships:</strong> Collaborations with Velodrome, Layer3,
+            and Hyperlane expand its reach and utility.
+          </li>
+        </ol>
+        <button id="close-about" class="close-btn">Close</button>
+      </div>
+    </div>
+
+    <!-- Floating Window: Help -->
+    <div id="help-window" class="floating-window">
+      <div class="floating-content">
+        <h2>Help & Level Guide</h2>
+        <p>
+          <strong>Level 1:</strong> Navigate the maze quickly.<br>
+          <strong>Level 2:</strong> Align the lock dials by color.<br>
+          <strong>Level 3:</strong> Collect stars to reduce debt.<br>
+          <strong>Level 4:</strong> Swap puzzle pieces to help friends.<br>
+          <strong>Level 5:</strong> Match 3 tokens in a row.<br>
+          <strong>Level 6:</strong> Connect islands with bridges.<br>
+          <strong>Level 7:</strong> Flip cards to find matching pairs.<br>
+          <strong>Level 8:</strong> Stack blocks (like Tetris) and clear lines.<br>
+        </p>
+        <button id="close-help" class="close-btn">Close</button>
+      </div>
+    </div>
+
+  </div>
+  <!-- End Main Container -->
+</body>
+</html>
